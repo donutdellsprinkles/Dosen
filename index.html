@@ -1,0 +1,112 @@
+<html>
+    <head>
+   <title>Dosen</title>
+   
+    </head>
+    <body>
+        <h1>Dosen</h1>
+        <h2>Concentrate, focus and Succeed</h2>
+        <button type="button" class="btn" id="button"><i class="fas fa-bars"></i></button>
+        <div class="hide">New start.</div>
+        <p id="Countdown" class="Countdown" style="position:absolute; left:1110px; bottom:245px;">67:00</p>
+        <form>
+            <label for="task">First task</label><br>
+            <input type="text" id="task" name="task" value=""><br>
+            <label for="task-2">Second task</label><br>
+            <input type="text" id="task-2" name="task-2" value=""><br>
+            <label for="task-3">Third task</label><br>
+            <input type="text" id="task-3" name="task-3" value=""><br>
+            <label for="task-4">Fourth task</label><br>
+            <input type="text" id="task-4" name="task-4" value=""><br>
+            
+        </form>
+        <style>
+            h1 {
+    text-align: center;
+    right: 50%;
+    font-size: 80px;
+
+}
+h2 {
+    text-align: left;
+    font-family: monospace;
+    color: #fff;
+    font-size: 50px;
+}
+body {
+    background-color: #f35151;
+    cursor: url("https://lh3.googleusercontent.com/6uFi410PNAgAJuXVFB_sQASyevN-O9D5JgT7flazVbr4YVgPQBBrwvRxq6-cGEx0F7pR50Ta91qw4pJOQF0CQV7uLhDLhO06A29GqeATIIPkJXd4iI5Gr1zmq52v_Iw8oMZbGWBWsg=s32-p-k"), auto;
+}
+.btn {
+    height: 100px;
+    width: 100px;
+    background-image: url(https://c.tenor.com/s68izRZawgYAAAAM/clock-time.gif);
+    border: none;
+    background-repeat: no-repeat;
+    background-position:center;
+    position: absolute;
+    border-radius: 100%;
+    background-size: 125px;
+    left: 80%;
+    cursor: pointer;
+
+}
+.Countdown {
+    font-size: 30px;
+    color: rebeccapurple;
+}
+.hide {
+    display: none;
+  }
+  .btn:hover + .hide {
+    display: block;
+    color: cyan;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: right;
+    font-size: 25px;
+  }
+  form {
+    color: cyan;
+    font-weight: Bold;
+    font-family: monospace;
+    font-size: 15px;
+  }
+        </style>
+        <script>
+            const startingMinutes= 67;
+let time = startingMinutes * 60;
+
+const countdownEl = document.getElementById('Countdown');
+
+
+setInterval(updateCountdown, 1000);
+
+function updateCountdown () {
+    const minutes = Math.floor(time / 60);
+    let seconds = time % 60;
+
+    seconds = seconds <10 ? '0' + seconds : seconds;
+
+    countdownEl.innerHTML = `${minutes}:${seconds}`;
+
+    time--;
+    time = time < 0 ? 0 : time; 
+    if (time <=0) {audio.play()};
+    
+}
+
+const audio = new Audio();
+audio.src = "alarm.mp3";
+
+var button = document.querySelector('button');
+button.onclick =()=> {
+    document.getElementById("task").value = "";
+    document.getElementById("task-2").value = "";
+    document.getElementById("task-3").value = "";
+    document.getElementById("task-4").value = "";
+   window.location.reload();
+
+}
+        </script>
+    </body>
+</html>
