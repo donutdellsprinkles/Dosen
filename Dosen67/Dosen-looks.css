@@ -42,3 +42,9 @@ body {
     text-align: right;
     font-size: 25px;
   }
+  form {
+    color: cyan;
+    font-weight: Bold;
+    font-family: monospace;
+    font-size: 15px;
+  }
