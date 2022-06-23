@@ -1,0 +1,44 @@
+h1 {
+    text-align: center;
+    right: 50%;
+    font-size: 80px;
+
+}
+h2 {
+    text-align: left;
+    font-family: monospace;
+    color: #fff;
+    font-size: 50px;
+}
+body {
+    background-color: #f35151;
+    cursor: url("https://lh3.googleusercontent.com/6uFi410PNAgAJuXVFB_sQASyevN-O9D5JgT7flazVbr4YVgPQBBrwvRxq6-cGEx0F7pR50Ta91qw4pJOQF0CQV7uLhDLhO06A29GqeATIIPkJXd4iI5Gr1zmq52v_Iw8oMZbGWBWsg=s32-p-k"), auto;
+}
+.btn {
+    height: 100px;
+    width: 100px;
+    background-image: url(https://c.tenor.com/s68izRZawgYAAAAM/clock-time.gif);
+    border: none;
+    background-repeat: no-repeat;
+    background-position:center;
+    position: absolute;
+    border-radius: 100%;
+    background-size: 125px;
+    left: 80%;
+    cursor: pointer;
+
+}
+.Countdown {
+    font-size: 30px;
+    color: rebeccapurple;
+}
+.hide {
+    display: none;
+  }
+  .btn:hover + .hide {
+    display: block;
+    color: cyan;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: right;
+    font-size: 25px;
+  }
