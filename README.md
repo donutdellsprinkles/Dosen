@@ -9,4 +9,8 @@ Concentrate, focus and succeed.
 - The last 60 minutes are to be spent working.
 When the time is over the alarm will start and will keep on going until you press the clock button above the timer which will create a new start in which the timer resets and all the tasks reset.
 - # Design
-- A very simple design was chosen as to not distract the person using the website. The red background color was used as it is makes you feel passionate and energized.
+- A very simple design was chosen as to not distract the person using the website. The red background color was used as physcological studies have shown that it  makes you feel passionate and energized.
+# Test.Js
+- This was an attempt as creating a mouse trail but It was not working as well as being very distracting so it was scrapped from the final project.
+- # Note
+- Please use the latest version of the chrome browser. This website is mostly optimized for chrome.
